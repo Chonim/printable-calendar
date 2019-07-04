@@ -85,7 +85,7 @@ export default {
         return []
       }
       let copiedDays = this.calendarData.slice()
-      while (copiedDays[0].thisMonth === 'false' && copiedDays[0].dayOfWeek !== 2) {
+      while (copiedDays[0].thisMonth === 'false' && copiedDays[0].dayOfWeek !== 1) {
         copiedDays = copiedDays.splice(1)
       }
       if (copiedDays[6].thisMonth === 'false') {

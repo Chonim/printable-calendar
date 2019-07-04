@@ -9,8 +9,8 @@
     <div
       class="date"
       :class="{
-        saturday: day.thisMonth && day.dayOfWeek === 1,
-        sunday: day.thisMonth && day.dayOfWeek === 2,
+        saturday: day.thisMonth && day.dayOfWeek === 7,
+        sunday: day.thisMonth && day.dayOfWeek === 1,
         dayoff: day.thisMonth&& day.anniversaryList.some(anniversary => anniversary.dayOff === 'true')
       }"
       :style="{
