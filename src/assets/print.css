@@ -1,0 +1,11 @@
+@media print {
+
+  html,
+  body {
+    margin: 0;
+  }
+
+  @page {
+    size: landscape
+  }
+}
