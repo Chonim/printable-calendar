@@ -2,15 +2,16 @@
   <div
     class="each-day"
     :class="{
-      grey: day.thisMonth === 'false'
+      grey: !day.thisMonth,
+      'border-top': dateIndex < 6
     }"
   >
     <div
       class="date"
       :class="{
-        saturday: day.thisMonth === 'true' && day.dayOfWeek === 1,
-        sunday: day.thisMonth === 'true' && day.dayOfWeek === 2,
-        dayoff: day.thisMonth === 'true'&& day.anniversaryList.some(anniversary => anniversary.dayOff === 'true')
+        saturday: day.thisMonth && day.dayOfWeek === 1,
+        sunday: day.thisMonth && day.dayOfWeek === 2,
+        dayoff: day.thisMonth&& day.anniversaryList.some(anniversary => anniversary.dayOff === 'true')
       }"
       :style="{
         'font-size': isLandscape ? '36px' : '24px' }
@@ -26,7 +27,7 @@
         'font-size': isLandscape ? '3mm' : '8px',
         'min-height': day.anniversaryList.length ? '4mm' : '11px'
       }"
-    >{{ day.anniversaryList.length ? day.anniversaryList[0].name : '' }}</div>
+    >{{ day.thisMonth && day.anniversaryList.length ? (day.anniversaryList[0].cid ? day.anniversaryList[0].name : '') : '' }}</div>
   </div>
 </template>
 
@@ -79,5 +80,7 @@ export default {
 }
 .grey {
   color: #c1c1c1;
+}
+.border-top {
 }
 </style>

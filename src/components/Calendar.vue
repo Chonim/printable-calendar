@@ -42,7 +42,7 @@
       <each-day
         v-for="(day, i) in refinedDays"
         :key="day.solarDate"
-        v-show="i < (refinedDays[35].thisMonth === 'true' ? 42 : 35)"
+        v-show="i < (refinedDays[35].thisMonth ? 42 : 35)"
         :is-landscape="isLandscape"
         :day="day"
         :date-index="i"
@@ -95,6 +95,8 @@ export default {
         .map(day => ({
           ...day,
           day: parseInt(day.solarDate.substring(6, 8), 10),
+          thisMonth: day.thisMonth === 'true',
+          dayOff: day.dayOff === 'true',
           lunarDate: this.getLunarDate(day.lunarDate)
         }))
     }
