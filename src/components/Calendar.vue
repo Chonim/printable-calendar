@@ -17,7 +17,7 @@
         {{ month }}월
       </div>
       <img
-        src="https://images.unsplash.com/photo-1550995866-a6602bfff2f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+        :src="imageUrl"
         :style="{ height: isLandscape ? '64px' : '64px' }"
         alt="Calendar picture"
       >
@@ -70,13 +70,17 @@ export default {
     return {
       calendarData: [],
       weekdays: ['일', '월', '화', '수', '목', '금', '토'],
-      month: 0
+      month: 0,
+      monthText: '',
+      imageUrl: ''
     }
   },
   async created () {
     const { m } = this.$route.query
-    const calendarData = await import(`@/assets/${m}.json`)
-    this.month = parseInt(m.substring(4, 6), 10)
+    const calendarData = await import(`@/assets/data/${m}.json`)
+    this.monthText = m.substring(4, 6)
+    this.month = parseInt(this.monthText, 10)
+    this.imageUrl = require(`@/assets/images/${this.monthText}.png`)
     this.calendarData = calendarData.openCalendar.daysList
   },
   computed: {
@@ -112,6 +116,7 @@ export default {
 
 <style lang="scss" scoped>
 .calendar-wrapper {
+  padding-top: 4px;
   width: 50vw;
   padding: 4px;
   border-right: 1px solid #000;
@@ -148,9 +153,11 @@ export default {
       width: 30%;
       object-fit: cover;
       object-position: center;
+      border-radius: 8px;
     }
   }
   .calendar-container {
+    margin-top: 4px;
     width: 50vw;
     height: calc(100% - 64px);
     border-top: 1px solid #000;

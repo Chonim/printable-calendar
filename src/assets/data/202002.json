@@ -1,0 +1,653 @@
+{
+  "openCalendar": {
+    "daysList": [
+      {
+        "lunarDate": "2020-01-01",
+        "solarDate": "20200125",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "true",
+            "nationalDay": "true",
+            "linkUrl": "?where=nexearch&query=%EC%84%A4%EB%82%A0&sm=tab_etc&ie=utf8",
+            "name": "설날",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "토",
+        "dayOff": "true",
+        "hasSchedule": "true",
+        "nationalDay": "true",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-02",
+        "solarDate": "20200126",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "true",
+            "nationalDay": "true",
+            "linkUrl": "?where=nexearch&query=%EC%84%A4%EB%82%A0&sm=tab_etc&ie=utf8",
+            "name": "설날",
+            "cid": ""
+          }
+        ],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "false",
+        "nationalDay": "true",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-03",
+        "solarDate": "20200127",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "true",
+            "nationalDay": "true",
+            "linkUrl": "?where=nexearch&query=%EB%8C%80%EC%B2%B4%ED%9C%B4%EC%9D%BC&sm=tab_etc&ie=utf8",
+            "name": "대체 휴일",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "월",
+        "dayOff": "true",
+        "hasSchedule": "true",
+        "nationalDay": "true",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-04",
+        "solarDate": "20200128",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-05",
+        "solarDate": "20200129",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-06",
+        "solarDate": "20200130",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-07",
+        "solarDate": "20200131",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-01-08",
+        "solarDate": "20200201",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-09",
+        "solarDate": "20200202",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-10",
+        "solarDate": "20200203",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "월",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-11",
+        "solarDate": "20200204",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EC%9E%85%EC%B6%98&sm=tab_etc&ie=utf8",
+            "name": "입춘",
+            "cid": "200"
+          }
+        ],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-12",
+        "solarDate": "20200205",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-13",
+        "solarDate": "20200206",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-14",
+        "solarDate": "20200207",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-15",
+        "solarDate": "20200208",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EC%A0%95%EC%9B%94+%EB%8C%80%EB%B3%B4%EB%A6%84&sm=tab_etc&ie=utf8",
+            "name": "정월 대보름",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-16",
+        "solarDate": "20200209",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-17",
+        "solarDate": "20200210",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "월",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-18",
+        "solarDate": "20200211",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-19",
+        "solarDate": "20200212",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-20",
+        "solarDate": "20200213",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-21",
+        "solarDate": "20200214",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EB%B0%B8%EB%9F%B0%ED%83%80%EC%9D%B8%EB%8D%B0%EC%9D%B4&sm=tab_etc&ie=utf8",
+            "name": "밸런타인데이",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-22",
+        "solarDate": "20200215",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-23",
+        "solarDate": "20200216",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-24",
+        "solarDate": "20200217",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "월",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-25",
+        "solarDate": "20200218",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-26",
+        "solarDate": "20200219",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EC%9A%B0%EC%88%98&sm=tab_etc&ie=utf8",
+            "name": "우수",
+            "cid": "200"
+          }
+        ],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-27",
+        "solarDate": "20200220",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-28",
+        "solarDate": "20200221",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-29",
+        "solarDate": "20200222",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-01-30",
+        "solarDate": "20200223",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-01",
+        "solarDate": "20200224",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "월",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-02",
+        "solarDate": "20200225",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-03",
+        "solarDate": "20200226",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-04",
+        "solarDate": "20200227",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-05",
+        "solarDate": "20200228",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=2.28+%EB%AF%BC%EC%A3%BC%EC%9A%B4%EB%8F%99&sm=tab_etc&ie=utf8",
+            "name": "2.28 민주운동",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-06",
+        "solarDate": "20200229",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "true"
+      },
+      {
+        "lunarDate": "2020-02-07",
+        "solarDate": "20200301",
+        "dayOfWeek": 1,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "true",
+            "nationalDay": "true",
+            "linkUrl": "?where=nexearch&query=%EC%82%BC%EC%9D%BC%EC%A0%88&sm=tab_etc&ie=utf8",
+            "name": "삼일절",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "일",
+        "dayOff": "true",
+        "hasSchedule": "true",
+        "nationalDay": "true",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-08",
+        "solarDate": "20200302",
+        "dayOfWeek": 2,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "월",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-09",
+        "solarDate": "20200303",
+        "dayOfWeek": 3,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EB%82%A9%EC%84%B8%EC%9E%90%EC%9D%98+%EB%82%A0&sm=tab_etc&ie=utf8",
+            "name": "납세자의 날",
+            "cid": "100"
+          }
+        ],
+        "solarWeek": "화",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-10",
+        "solarDate": "20200304",
+        "dayOfWeek": 4,
+        "leapMonth": "false",
+        "luckyDay": "true",
+        "anniversaryList": [],
+        "solarWeek": "수",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-11",
+        "solarDate": "20200305",
+        "dayOfWeek": 5,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [
+          {
+            "dayOff": "false",
+            "nationalDay": "false",
+            "linkUrl": "?where=nexearch&query=%EA%B2%BD%EC%B9%A9&sm=tab_etc&ie=utf8",
+            "name": "경칩",
+            "cid": "200"
+          }
+        ],
+        "solarWeek": "목",
+        "dayOff": "false",
+        "hasSchedule": "true",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-12",
+        "solarDate": "20200306",
+        "dayOfWeek": 6,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "금",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      },
+      {
+        "lunarDate": "2020-02-13",
+        "solarDate": "20200307",
+        "dayOfWeek": 7,
+        "leapMonth": "false",
+        "luckyDay": "false",
+        "anniversaryList": [],
+        "solarWeek": "토",
+        "dayOff": "false",
+        "hasSchedule": "false",
+        "nationalDay": "false",
+        "thisMonth": "false"
+      }
+    ]
+  }
+}
