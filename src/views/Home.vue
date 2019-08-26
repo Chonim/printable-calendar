@@ -27,13 +27,14 @@ export default {
     }
   },
   created () {
-    const { num } = this.$route.query
+    const { num, m } = this.$route.query
     if (num) {
       this.numOfCalendars = parseInt(num, 10)
     }
     if (this.numOfCalendars === 2) {
       import('@/assets/print.css')
     }
+    document.title = `${m}-${num}장`
   },
   computed: {
     isLandscape () {
