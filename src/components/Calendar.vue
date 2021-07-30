@@ -101,8 +101,7 @@ export default {
         }))
     },
     hasSixthWeek () {
-      // return parseInt(this.calendarData.length / 7, 10) === 6
-      return this.calendarData.length >= 42 && this.calendarData[42].thisMonth === 'true'
+      return this.refinedDays.length > 35 && this.refinedDays[35].thisMonth === true
     }
   },
   async created () {
@@ -131,6 +130,16 @@ export default {
   margin: 0 auto;
   &.landscape {
     height: 98vh;
+    transform: scaleY(0.98);
+  }
+  &.six-weeks {
+    height: 49vh;
+    transform-origin: top;
+    transform: scaleY(0.96);
+    &.landscape {
+      height: 98vh;
+      transform: scaleY(1);
+    }
   }
   .calendar-header-wrapper {
     display: flex;
@@ -201,13 +210,4 @@ export default {
     }
   }
 }
-.six-weeks {
-  transform-origin: top;
-  transform: scaleY(0.92);
-  &.landscape {
-    height: 100vh;
-    transform: scaleY(0.98);
-  }
-}
-
 </style>
