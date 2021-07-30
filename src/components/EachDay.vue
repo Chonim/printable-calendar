@@ -3,7 +3,8 @@
     class="each-day"
     :class="{
       grey: !day.thisMonth,
-      'border-top': dateIndex < 6
+      'border-top': dateIndex < 7,
+      'sixth-week': hasSixthWeek
     }"
   >
     <div
@@ -16,18 +17,24 @@
       :style="{
         'font-size': isLandscape ? '36px' : '24px' }
       "
-    >{{ day.day }}</div>
+    >
+      {{ day.day }}
+    </div>
     <div
       class="lunar-date"
       :style="{ 'font-size': isLandscape ? '14px' : '12px' }"
-    >{{ day.lunarDate }}</div>
+    >
+      {{ day.lunarDate }}
+    </div>
     <div
       class="anniversary-text"
       :style="{
         'font-size': isLandscape ? '3mm' : '8px',
         'min-height': day.anniversaryList.length ? '4mm' : '11px'
       }"
-    >{{ day.thisMonth && day.anniversaryList.length ? (day.anniversaryList[0].cid ? day.anniversaryList[0].name : '') : '' }}</div>
+    >
+      {{ day.thisMonth && day.anniversaryList.length ? (day.anniversaryList[0].cid ? day.anniversaryList[0].name : '') : '' }}
+    </div>
   </div>
 </template>
 
@@ -46,6 +53,10 @@ export default {
     dateIndex: {
       type: Number,
       required: true
+    },
+    hasSixthWeek: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -82,5 +93,6 @@ export default {
   color: #c1c1c1;
 }
 .border-top {
+  border-top: 1px solid black;
 }
 </style>
