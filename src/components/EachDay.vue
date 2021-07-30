@@ -3,7 +3,8 @@
     class="each-day"
     :class="{
       grey: !day.thisMonth,
-      'border-top': dateIndex < 6
+      'border-top': dateIndex < 7,
+      'sixth-week': hasSixthWeek
     }"
   >
     <div
@@ -46,6 +47,10 @@ export default {
     dateIndex: {
       type: Number,
       required: true
+    },
+    hasSixthWeek: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -82,5 +87,6 @@ export default {
   color: #c1c1c1;
 }
 .border-top {
+  border-top: 1px solid black;
 }
 </style>

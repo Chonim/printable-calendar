@@ -1,7 +1,10 @@
 <template>
   <div
     class="calendar-wrapper"
-    :style="{ height: isLandscape ? '100vh' : '50vh' }"
+    :class="{
+      'six-weeks': hasSixthWeek,
+      landscape: isLandscape
+    }"
   >
     <div class="calendar-header-wrapper">
       <div class="name-card-wrapper">
@@ -44,6 +47,7 @@
         :key="day.solarDate"
         v-show="i < (refinedDays[35].thisMonth ? 42 : 35)"
         :is-landscape="isLandscape"
+        :hasSixthWeek="hasSixthWeek"
         :day="day"
         :date-index="i"
       />
@@ -103,6 +107,9 @@ export default {
           dayOff: day.dayOff === 'true',
           lunarDate: this.getLunarDate(day.lunarDate)
         }))
+    },
+    hasSixthWeek () {
+      return parseInt(this.calendarData.length / 7, 10) === 6
     }
   },
   methods: {
@@ -117,9 +124,10 @@ export default {
 <style lang="scss" scoped>
 .calendar-wrapper {
   padding-top: 4px;
-  width: 50vw;
+  width: 48vw;
+  height: 50vh;
   padding: 4px;
-  border-right: 1px solid #000;
+  margin: 0 auto;
   .calendar-header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -158,8 +166,8 @@ export default {
   }
   .calendar-container {
     margin-top: 4px;
-    width: 50vw;
-    height: calc(100% - 64px);
+    width: 100%;
+    height: calc(100% - 4rem);
     border-top: 1px solid #000;
     border-left: 1px solid #000;
     display: grid;
@@ -189,4 +197,13 @@ export default {
     }
   }
 }
+.six-weeks {
+  transform-origin: top;
+  transform: scaleY(0.92);
+  &.landscape {
+    height: 100vh;
+    transform: scaleY(0.98);
+  }
+}
+
 </style>

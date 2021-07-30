@@ -49,8 +49,5 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-weight: bold;
-  .border-top {
-    border-top: 1px solid #000;
-  }
 }
 </style>
