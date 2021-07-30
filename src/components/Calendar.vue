@@ -44,10 +44,10 @@
       </div>
       <each-day
         v-for="(day, i) in refinedDays"
-        :key="day.solarDate"
         v-show="i < (refinedDays[35].thisMonth ? 42 : 35)"
+        :key="day.solarDate"
         :is-landscape="isLandscape"
-        :hasSixthWeek="hasSixthWeek"
+        :has-sixth-week="hasSixthWeek"
         :day="day"
         :date-index="i"
       />
@@ -61,14 +61,14 @@ import EachDay from './EachDay'
 // https://search.naver.com/p/csearch/content/qapirender.nhn?where=nexearch&key=CalendarAnniversary&pkid=134&q=201907%EC%9B%94
 export default {
   name: 'CalendarComponent',
+  components: {
+    EachDay
+  },
   props: {
     isLandscape: {
       type: Boolean,
       default: false
     }
-  },
-  components: {
-    EachDay
   },
   data () {
     return {
@@ -78,14 +78,6 @@ export default {
       monthText: '',
       imageUrl: ''
     }
-  },
-  async created () {
-    const { m } = this.$route.query
-    const calendarData = await import(`@/assets/data/${m}.json`)
-    this.monthText = m.substring(4, 6)
-    this.month = parseInt(this.monthText, 10)
-    this.imageUrl = require(`@/assets/images/${this.monthText}.png`)
-    this.calendarData = calendarData.openCalendar.daysList
   },
   computed: {
     refinedDays () {
@@ -109,8 +101,17 @@ export default {
         }))
     },
     hasSixthWeek () {
-      return parseInt(this.calendarData.length / 7, 10) === 6
+      // return parseInt(this.calendarData.length / 7, 10) === 6
+      return this.calendarData.length >= 42 && this.calendarData[42].thisMonth === 'true'
     }
+  },
+  async created () {
+    const { m } = this.$route.query
+    const calendarData = await import(`@/assets/data/${m}.json`)
+    this.monthText = m.substring(4, 6)
+    this.month = parseInt(this.monthText, 10)
+    this.imageUrl = require(`@/assets/images/${this.monthText}.png`)
+    this.calendarData = calendarData.openCalendar.daysList
   },
   methods: {
     getLunarDate (lunarDate) {

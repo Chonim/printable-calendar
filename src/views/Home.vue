@@ -17,13 +17,18 @@
 import CalendarComponent from '@/components/Calendar'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     CalendarComponent
   },
   data () {
     return {
       numOfCalendars: 4
+    }
+  },
+  computed: {
+    isLandscape () {
+      return this.numOfCalendars === 2
     }
   },
   created () {
@@ -35,11 +40,6 @@ export default {
       import('@/assets/print.css')
     }
     document.title = `${m}-${num}장`
-  },
-  computed: {
-    isLandscape () {
-      return this.numOfCalendars === 2
-    }
   }
 }
 </script>
