@@ -94,7 +94,7 @@ export default {
       return copiedDays
         .map(day => ({
           ...day,
-          day: parseInt(day.solarDate.substring(6, 8), 10),
+          day: +day.solarDate.substring(6, 8),
           thisMonth: day.thisMonth === 'true',
           dayOff: day.dayOff === 'true',
           lunarDate: this.getLunarDate(day.lunarDate)
@@ -108,14 +108,15 @@ export default {
     const { m } = this.$route.query
     const calendarData = await import(`@/assets/data/${m}.json`)
     this.monthText = m.substring(4, 6)
-    this.month = parseInt(this.monthText, 10)
+    this.month = +this.monthText
     this.imageUrl = require(`@/assets/images/${this.monthText}.png`)
     this.calendarData = calendarData.openCalendar.daysList
   },
   methods: {
     getLunarDate (lunarDate) {
-      const lunarDates = lunarDate.split('-')
-      return `${parseInt(lunarDates[1], 10)}.${parseInt(lunarDates[2], 10)}`
+      // eslint-disable-next-line no-unused-vars
+      const [year, month, day] = lunarDate.split('-')
+      return `${+month}.${+day}`
     }
   }
 }

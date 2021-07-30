@@ -34,7 +34,7 @@ export default {
   created () {
     const { num, m } = this.$route.query
     if (num) {
-      this.numOfCalendars = parseInt(num, 10)
+      this.numOfCalendars = +num
     }
     if (this.numOfCalendars === 2) {
       import('@/assets/print.css')
