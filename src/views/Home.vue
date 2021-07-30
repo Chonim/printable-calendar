@@ -37,7 +37,7 @@ export default {
       this.numOfCalendars = +num
     }
     if (this.numOfCalendars === 2) {
-      import('@/assets/print.css')
+      require('@/assets/print.css')
     }
     document.title = `${m}-${num}장`
   }

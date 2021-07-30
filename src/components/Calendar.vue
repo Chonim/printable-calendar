@@ -106,7 +106,7 @@ export default {
   },
   async created () {
     const { m } = this.$route.query
-    const calendarData = await import(`@/assets/data/${m}.json`)
+    const calendarData = require(`@/assets/data/${m}.json`)
     this.monthText = m.substring(4, 6)
     this.month = +this.monthText
     this.imageUrl = require(`@/assets/images/${this.monthText}.png`)
