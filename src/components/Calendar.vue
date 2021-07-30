@@ -126,9 +126,12 @@ export default {
 .calendar-wrapper {
   padding-top: 4px;
   width: 48vw;
-  height: 50vh;
+  height: 49vh;
   padding: 4px;
   margin: 0 auto;
+  &.landscape {
+    height: 98vh;
+  }
   .calendar-header-wrapper {
     display: flex;
     justify-content: space-between;
