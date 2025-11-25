@@ -44,7 +44,7 @@
       </div>
       <each-day
         v-for="(day, i) in refinedDays"
-        v-show="i < (refinedDays[35].thisMonth ? 42 : 35)"
+        v-show="i < (hasSixthWeek ? 42 : 35)"
         :key="day.solarDate"
         :is-landscape="isLandscape"
         :has-sixth-week="hasSixthWeek"
