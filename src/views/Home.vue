@@ -40,6 +40,16 @@ export default {
       require('@/assets/print.css')
     }
     document.title = `${m}-${num}장`
+  },
+  mounted () {
+    const { print: shouldPrint } = this.$route.query
+    if (shouldPrint === '1') {
+      this.$nextTick(() => {
+        setTimeout(() => {
+          window.print()
+        }, 500)
+      })
+    }
   }
 }
 </script>
