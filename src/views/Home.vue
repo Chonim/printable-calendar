@@ -38,6 +38,8 @@ export default {
     }
     if (this.numOfCalendars === 2) {
       require('@/assets/print.css')
+    } else {
+      require('@/assets/print-portrait.css')
     }
     document.title = `${m}-${num}장`
   },
