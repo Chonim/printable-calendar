@@ -2,7 +2,7 @@
   <div class="image-links-wrapper">
     <h1>월별 이미지 다운로드</h1>
     <p class="description">
-      Unsplash에서 무료 이미지를 다운로드하세요. (상업용 무료, 저작권 없음)
+      Unsplash, Pexels, Pixabay에서 무료 이미지를 다운로드하세요. (상업용 무료)
     </p>
 
     <section
@@ -18,14 +18,32 @@
           class="month-card"
         >
           <span class="month-label">{{ month.num }}월 - {{ month.theme }}</span>
-          <a
-            :href="month.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn"
-          >
-            Unsplash에서 다운로드
-          </a>
+          <div class="link-buttons">
+            <a
+              :href="month.unsplash"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-unsplash"
+            >
+              Unsplash
+            </a>
+            <a
+              :href="month.pexels"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-pexels"
+            >
+              Pexels
+            </a>
+            <a
+              :href="month.pixabay"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-pixabay"
+            >
+              Pixabay
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -59,33 +77,105 @@ export default {
         {
           name: '겨울',
           months: [
-            { num: 12, theme: '크리스마스', url: 'https://unsplash.com/s/photos/winter-landscape' },
-            { num: 1, theme: '겨울/새해', url: 'https://unsplash.com/s/photos/winter-snow' },
-            { num: 2, theme: '겨울 풍경', url: 'https://unsplash.com/s/photos/snow-landscape' }
+            {
+              num: 12,
+              theme: '크리스마스',
+              unsplash: 'https://unsplash.com/s/photos/winter-landscape',
+              pexels: 'https://www.pexels.com/search/winter%20landscape/',
+              pixabay: 'https://pixabay.com/images/search/winter%20landscape/'
+            },
+            {
+              num: 1,
+              theme: '겨울/새해',
+              unsplash: 'https://unsplash.com/s/photos/winter-snow',
+              pexels: 'https://www.pexels.com/search/winter%20snow/',
+              pixabay: 'https://pixabay.com/images/search/winter%20snow/'
+            },
+            {
+              num: 2,
+              theme: '겨울 풍경',
+              unsplash: 'https://unsplash.com/s/photos/snow-landscape',
+              pexels: 'https://www.pexels.com/search/snow%20landscape/',
+              pixabay: 'https://pixabay.com/images/search/snow%20landscape/'
+            }
           ]
         },
         {
           name: '봄',
           months: [
-            { num: 3, theme: '초봄', url: 'https://unsplash.com/s/photos/spring-blossom' },
-            { num: 4, theme: '벚꽃', url: 'https://unsplash.com/s/photos/cherry-blossom' },
-            { num: 5, theme: '봄꽃', url: 'https://unsplash.com/s/photos/spring-flowers' }
+            {
+              num: 3,
+              theme: '초봄',
+              unsplash: 'https://unsplash.com/s/photos/spring-blossom',
+              pexels: 'https://www.pexels.com/search/spring%20blossom/',
+              pixabay: 'https://pixabay.com/images/search/spring%20blossom/'
+            },
+            {
+              num: 4,
+              theme: '벚꽃',
+              unsplash: 'https://unsplash.com/s/photos/cherry-blossom',
+              pexels: 'https://www.pexels.com/search/cherry%20blossom/',
+              pixabay: 'https://pixabay.com/images/search/cherry%20blossom/'
+            },
+            {
+              num: 5,
+              theme: '봄꽃',
+              unsplash: 'https://unsplash.com/s/photos/spring-flowers',
+              pexels: 'https://www.pexels.com/search/spring%20flowers/',
+              pixabay: 'https://pixabay.com/images/search/spring%20flowers/'
+            }
           ]
         },
         {
           name: '여름',
           months: [
-            { num: 6, theme: '초여름', url: 'https://unsplash.com/s/photos/summer-ocean' },
-            { num: 7, theme: '해변', url: 'https://unsplash.com/s/photos/summer-beach' },
-            { num: 8, theme: '해바라기', url: 'https://unsplash.com/s/photos/sunflower' }
+            {
+              num: 6,
+              theme: '초여름',
+              unsplash: 'https://unsplash.com/s/photos/summer-ocean',
+              pexels: 'https://www.pexels.com/search/summer%20ocean/',
+              pixabay: 'https://pixabay.com/images/search/summer%20ocean/'
+            },
+            {
+              num: 7,
+              theme: '해변',
+              unsplash: 'https://unsplash.com/s/photos/summer-beach',
+              pexels: 'https://www.pexels.com/search/summer%20beach/',
+              pixabay: 'https://pixabay.com/images/search/summer%20beach/'
+            },
+            {
+              num: 8,
+              theme: '해바라기',
+              unsplash: 'https://unsplash.com/s/photos/sunflower',
+              pexels: 'https://www.pexels.com/search/sunflower/',
+              pixabay: 'https://pixabay.com/images/search/sunflower/'
+            }
           ]
         },
         {
           name: '가을',
           months: [
-            { num: 9, theme: '초가을', url: 'https://unsplash.com/s/photos/autumn' },
-            { num: 10, theme: '단풍', url: 'https://unsplash.com/s/photos/autumn-leaves' },
-            { num: 11, theme: '늦가을', url: 'https://unsplash.com/s/photos/fall-leaves' }
+            {
+              num: 9,
+              theme: '초가을',
+              unsplash: 'https://unsplash.com/s/photos/autumn',
+              pexels: 'https://www.pexels.com/search/autumn/',
+              pixabay: 'https://pixabay.com/images/search/autumn/'
+            },
+            {
+              num: 10,
+              theme: '단풍',
+              unsplash: 'https://unsplash.com/s/photos/autumn-leaves',
+              pexels: 'https://www.pexels.com/search/autumn%20leaves/',
+              pixabay: 'https://pixabay.com/images/search/autumn%20leaves/'
+            },
+            {
+              num: 11,
+              theme: '늦가을',
+              unsplash: 'https://unsplash.com/s/photos/fall-leaves',
+              pexels: 'https://www.pexels.com/search/fall%20leaves/',
+              pixabay: 'https://pixabay.com/images/search/fall%20leaves/'
+            }
           ]
         }
       ]
@@ -135,30 +225,54 @@ export default {
   background: #f8f9fa;
   border-radius: 8px;
   padding: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .month-label {
+    display: block;
     font-size: 15px;
     font-weight: bold;
     color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  .link-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
   }
 }
 
 .btn {
-  padding: 8px 14px;
+  padding: 6px 10px;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 13px;
-  background: #e74c3c;
+  font-size: 12px;
   color: white;
   transition: all 0.2s;
   white-space: nowrap;
 
-  &:hover {
-    background: #c0392b;
+  &.btn-unsplash {
+    background: #111;
+
+    &:hover {
+      background: #333;
+    }
+  }
+
+  &.btn-pexels {
+    background: #05a081;
+
+    &:hover {
+      background: #048a6e;
+    }
+  }
+
+  &.btn-pixabay {
+    background: #00ab6c;
+
+    &:hover {
+      background: #009359;
+    }
   }
 }
 
