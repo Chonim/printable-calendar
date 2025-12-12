@@ -17,8 +17,6 @@ header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
   display: none;
 }
 @page {
-  size: auto;   /* auto is the initial value */
-  /* this affects the margin in the printer settings */
   margin: 0mm 0mm 0mm 0mm;
 }
 body {

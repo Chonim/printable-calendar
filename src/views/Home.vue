@@ -36,11 +36,11 @@ export default {
     if (num) {
       this.numOfCalendars = +num
     }
-    if (this.numOfCalendars === 2) {
-      require('@/assets/print.css')
-    } else {
-      require('@/assets/print-portrait.css')
-    }
+    // Inject @page CSS dynamically for print orientation
+    const orientation = this.numOfCalendars === 2 ? 'landscape' : 'portrait'
+    const style = document.createElement('style')
+    style.textContent = `@page { size: A4 ${orientation}; }`
+    document.head.appendChild(style)
     document.title = `${m}-${num}장`
   },
   mounted () {
